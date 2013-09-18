@@ -5,6 +5,9 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+.reveal section img {
+  border: none !important; }
+
 .reveal a:not(.image) {
   line-height: 1.3em; }
 
@@ -42,23 +45,25 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   color: #333333;
   font-family: "Quicksand", sans-serif;
   line-height: 0.9em;
   letter-spacing: -0.08em;
-  text-transform: uppercase;
+  text-transform: none;
   text-shadow: none; }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  font-family: "Sansita One", Impact, sans-serif;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  font-weight: 200; }
 
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
   color: #3b759e;
-  text-decoration: none;
+  text-decoration: underline;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   -ms-transition: color .15s ease;

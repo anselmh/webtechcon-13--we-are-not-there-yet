@@ -5,6 +5,9 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+.reveal section img {
+  border: none !important; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -17,7 +20,7 @@ body {
   font-size: 30px;
   font-weight: 200;
   letter-spacing: -0.02em;
-  color: #eeeeee; }
+  color: white; }
 
 ::selection {
   color: white;
@@ -33,8 +36,8 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
-  color: #eeeeee;
+  margin: 0 0 40px 0;
+  color: white;
   font-family: "Montserrat", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: -0.03em;
@@ -42,14 +45,16 @@ body {
   text-shadow: none; }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  font-family: "Sansita One", Impact, sans-serif;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  font-weight: 200; }
 
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
   color: #e7ad52;
-  text-decoration: none;
+  text-decoration: underline;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   -ms-transition: color .15s ease;
@@ -71,7 +76,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #eeeeee;
+  border: 4px solid white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;

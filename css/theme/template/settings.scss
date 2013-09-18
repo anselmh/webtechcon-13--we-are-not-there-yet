@@ -2,25 +2,33 @@
 // overridden by the super-theme
 
 // Background of the presentation
-$backgroundColor: #2b2b2b;
+$backgroundColor: #019875; // Slide 1 Emerald green
+$backgroundColor2: #A82B38; // Slide 2 Samba Red
+$backgroundColor3: #D25C3F; // Slide 3 Koi Orange
+$backgroundColor4: #4B2F5E; // Slide 4 Acai lila
+$backgroundColor5: #515860; // Slide 5 Turbulencs steel blue
+$backgroundColor6: #A92A5C; // Slide 6 Vivacious pink
+$backgroundColor7: #005B88; // Slide 7 Mykonos Blue
 
 // Primary/body text
-$mainFont: 'Lato', sans-serif;
+$mainFont: 'PT Mono', 'Courier', monospace;
 $mainFontSize: 36px;
-$mainColor: #eee;
+$mainColor: #FFF;
 
 // Headings
-$headingMargin: 0 0 20px 0;
-$headingFont: 'League Gothic', Impact, sans-serif;
-$headingColor: #eee;
+$headingMargin: 0 0 40px 0;
+$headingH1Font: 'Sansita One', Impact, sans-serif;
+$headingFont: 'Nixie One', sans-serif;
+$headingH1FontWeight: 200;
+$headingColor: #FFF;
 $headingLineHeight: 0.9em;
 $headingLetterSpacing: 0.02em;
-$headingTextTransform: uppercase;
-$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$headingTextTransform: none;
+$headingTextShadow: 0px 0px 0px rgba(0,0,0,0.2);
 $heading1TextShadow: $headingTextShadow;
 
 // Links and actions
-$linkColor: #13DAEC;
+$linkColor: #FFF;
 $linkColorHover: lighten( $linkColor, 20% );
 
 // Text selection
@@ -31,4 +39,8 @@ $selectionColor: #fff;
 // to return a background image or gradient
 @mixin bodyBackground() {
 	background: $backgroundColor;
+}
+
+.reveal section img {
+	border: none !important;
 }

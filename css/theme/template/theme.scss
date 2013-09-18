@@ -45,7 +45,9 @@ body {
 }
 
 .reveal h1 {
+	font-family: $headingH1Font;
 	text-shadow: $heading1TextShadow;
+	font-weight: $headingH1FontWeight;
 }
 
 
@@ -55,7 +57,7 @@ body {
 
 .reveal a:not(.image) {
 	color: $linkColor;
-	text-decoration: none;
+	text-decoration: underline;
 
 	-webkit-transition: color .15s ease;
 	   -moz-transition: color .15s ease;
