@@ -6,8 +6,8 @@
 
 		<title>Are we There Yet? - Anselm Hannemann</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A talk about the missing features in responsive webdesign and how to solve that.">
+		<meta name="author" content="Anselm Hannemann">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -85,6 +85,30 @@
 						<h2 class="">We look at <a href="http://caniuse.com/">caniuse.com</a></h2>
 						<h2 class="fragment">We write jQuery Plugins</h2>
 						<h2 class="fragment">We write <a href="http://prollyfill.org/">Prollyfills</a></h2>
+						<h2 class="fragment">»We want more awesomeness!«</h2>
+					</section>
+					
+					<aside class="notes">
+						Prollyfills == Sort of a shim for not yet standardized API/Webstandard
+						Polyfill == Sort of a shim for a standards API not yet implemented
+					</aside>
+				</section>
+				
+				<section data-background="#A82B38">
+					<section>
+						<h1>What do Webstandardistas do?</h1>
+					</section>
+					<section>
+						<h2 class="">»Here is more awesomeness!«</h2>
+						<h2 class="fragment">CSS Selectors Level 4</h2>
+						<h2 class="fragment">Ah, wait, no &mdash; we need to discuss about Shapes and Regions&hellip;</h2>
+						
+						<aside class="notes">
+							, my ass!  
+							…sort of
+							
+							Is that what you want? Who used regions here? Who Shapes? Would you need it?
+						</aside>
 					</section>
 				</section>
 				
@@ -93,7 +117,7 @@
 						<h1>But what should we do?</h1>
 					</section>
 					<section>
-						<h2 class="">Get involved, start contributing.</h2>
+						<h2 class="">Contribute!</h2>
 						<h2 class="fragment">Help to <a href="http://movethewebforward.org/">move the web forward</a></h2>
 						<h2 class="fragment">Write <em>Polyfills</em></a></h2>
 						<h2 class="fragment">Evolve Standards</a></h2>
@@ -241,14 +265,53 @@ img, video {
 				</section>
 
 				<section data-background="#A92A5C">
-					<h1></h1>
+					<h1>Resource Priorities</h1>
+					
+					<li class="fragment">The script loading behavior is <a href="http://www.html5rocks.com/en/tutorials/speed/script-loading/">messy</a>.</li>
+					<li class="fragment">We don't need at everything on pageload</li>
+					<li class="fragment"><code>defer</code> is not a solution</li>
+					<li class="fragment">We want to <code>lazyload</code>, <code>postpone</code> and do this in HTML and CSS!</li>
+					
+					<aside class="notes">
+						Hey, this is so cool! You know this, having a gallery on one page of your site and therefore you need jQuery and a modal plugin? Yeah, you know what I'm talking about here.
+						We don't even need that script on pageload, it can lazyload.
+						
+						And what about all the images that are not yet seen by the user because he hasn't the elements in the viewport yet? Yes, load them with postpone so they will get loaded only when they're in viewport. 
+					</aside>
 				</section>
 				
 				<section data-background="#A92A5C">
 					<section>
-						<h1></h1>
+						<h1><a href="http://www.w3.org/TR/2013/WD-components-intro-20130606/">Web Components</a></h1>
+						
+						<li>
+							<img src="img/poly-prollyfills.png" alt="Table showing how polyfills and prollyfills differ">
+						</li>
+						<li>Create Custom Elements</li>
+						<li>Shim them directly though the API</li>
+						<li>Do what you want to do</li>
+					</section>
+					<section>
+						<pre><code><template id="commentTemplate">
+    <div>
+        <img src="">
+        <div class="comment-text"></div>
+    </div>
+</template></code></pre>
 					</section>
 					
+					<section>
+						<h2>Anselm, damn you!</h2>
+						<p>I want all this stuff now!</p>
+						
+						<ul>
+							<li>For Web Components: <a href="http://www.polymer-project.org/">Polymer Projects</a></li>
+							<li>For RespImgs: <a href="https://github.com/scottjehl/picturefill/tree/srcset">picture/srcsetfill</a> + <a href="https://github.com/BBC-News/Imager.js/">Imager.js</a></li>
+							<li>For Resource Priorities: Well, sorry. Only <a href="http://requirejs.org/">require.js</a></li>
+							<li>For aspect-ratio: nothing cool, do it!</li>
+							<li>Touch/Pointer: <a href="https://github.com/mozilla/pointer.js">Pointer.js</a></li>
+						</ul>
+					</section>
 				</section>
 
 				<section data-background="#005B88">
