@@ -36,8 +36,8 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<!-- data-background="#019875" -->
-				<section data-background="img/current-situation.gif" data-transition="zoom">
+				<!-- data-background="#019875" | driving-cat: data-background="img/current-situation.gif" -->
+				<section data-background="#019875" data-transition="zoom">
 					<h1>Are we There yet?</h1>
 					<h3><s>Pro</s>gressive Responsive Design</h3>
 					<p>
@@ -46,13 +46,13 @@
 				</section>
 				
 				<section>
-					<section>
-						<h1 style="font-size: 5rem; text-align: left;"><img src="./img/anselm_italy_600wh.jpg" style="border: 0; border-radius: 50%; max-width: 12rem; margin-left: 8rem; margin-top: -1rem; margin-right: 2rem; float: left;">Anselm Hannemann</h1>
+					<section class="profile">
+						<h1 class="profile__name"><img class="profile__img" src="./img/anselm_italy_600wh.jpg">Anselm Hannemann</h1>
 						
-						<ul style="text-align: left; list-style: none; margin: 0 0 0 -3rem;">
-							<li><a href="">@helloanselm</a></li>
-							<li><a href="">hello@anselm-hannemann.com</a></li>
-							<li><a href="">helloanselm.com</a></li>
+						<ul class="profile__links">
+							<li><a href="https://twitter.com/helloanselm">@helloanselm</a></li>
+							<li><a href="mailto:hello@anselm-hannemann.com">hello@anselm-hannemann.com</a></li>
+							<li><a href="http://helloanselm.com/">helloanselm.com</a></li>
 						</ul>
 					</section>
 					<section>
@@ -67,9 +67,9 @@
 				</section>
 
 				<section data-background="#019875">
-					<h1>Heads Up!</h1>
+					<h1>Shiny <br>HTML5 &amp; CSS3</h1>
 					<p>
-						Responsive Design is only <strong>3 Years</strong> Old.
+						
 					</p>
 
 					<aside class="notes">
@@ -95,18 +95,64 @@
 					</section>
 					<section data-background="https://dl.dropboxusercontent.com/u/50917/adactio-awesome.jpg">
 						<h1>A great Achievement, heh?</h1>
-					</section>					
+					</section>
+					
+					<section data-background="#019875">
+						<h1>And it's getting even better!</h1>
+						<ul class="fragment">
+							<li>CSS Shapes</li>
+							<li>CSS Blending Modes</li>
+							<li>CSS Flexbox</li>
+							<li>CSS Writing Modes</li>
+							<li>and a lot more&hellip;</li>
+						</ul>
+					</section>
 				</section>
 				
+				<section>
+					<section>
+						<h1>Because we can!</h1>
+						<p data-height="268" data-theme-id="0" data-slug-hash="JCGoF" data-user="joshnh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/joshnh/pen/JCGoF'>Single Element Pure CSS MacBook Pro</a> by Joshua Hibbert (<a href='http://codepen.io/joshnh'>@joshnh</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+					</section>
+					
+					<section>
+						<h1>People getting more creative…</h1>
+						
+						<p data-height="400" data-theme-id="0" data-slug-hash="HEgwl" data-user="katydecorah" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/katydecorah/pen/HEgwl'>Navigation Bar by Jan Kaděra</a> by Katy DeCorah (<a href='http://codepen.io/katydecorah'>@katydecorah</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+					</section>
+					
+					<section>
+						<h1>&hellip;and even draw horses</h1>
+						
+						<p data-height="700" data-theme-id="0" data-slug-hash="bHzEL" data-user="the_ruther4d" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/the_ruther4d/pen/bHzEL'>CSS Fine Art</a> by Josh Rutherford (<a href='http://codepen.io/the_ruther4d'>@the_ruther4d</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+					</section>
+					
+					<section>
+						<h1>Some go insane.</h1>
+						<p><a href="http://codepen.io/jaysalvat/pen/HaqBf" target="_blank">[Don't crash my presentation]</a></p>
+					</section>
+					
+					<section>
+						<h1>&hearts;<br> those Rockstar Techniques!</h1>
+					</section>
+				</section>
+						
+				<section>
+					<h1>"So, what's your problem?"</h1>
+				</section>
+								
 				<section data-background="#A82B38">
 					<section>
-						<h1>But what do we do?</h1>
+						<h1>Our current workflow</h1>
 					</section>
 					<section>
-						<h2 class="">We look at <a href="http://caniuse.com/">caniuse.com</a></h2>
-						<h2 class="fragment">We write jQuery Plugins</h2>
-						<h2 class="fragment">We write <a href="http://prollyfill.org/">Prollyfills</a></h2>
-						<h2 class="fragment">»We want more awesomeness!«</h2>
+						<h2 class="">Look at <a href="http://caniuse.com/">caniuse.com</a></h2>
+						<h2 class="fragment">Search/Write jQuery Plugin</h2>
+						<h2 class="fragment">Write a <a href="http://prollyfill.org/">Prollyfill</a></h2>
+						<h2 class="fragment">Claiming »We want more awesomeness!«</h2>
 					</section>
 					
 					<aside class="notes">
@@ -117,12 +163,12 @@
 				
 				<section data-background="#A82B38">
 					<section>
-						<h1>What do Webstandardistas do?</h1>
+						<h1>WHATWG / W3C / Browser Vendors</h1>
 					</section>
 					<section>
-						<h2 class="">»Here is more awesomeness!«</h2>
+						<h2 class="">»We give you more Awesomeness!«</h2>
 						<h2 class="fragment">CSS Selectors Level 4</h2>
-						<h2 class="fragment">Ah, wait, no &mdash; we need to discuss about Shapes and Regions&hellip;</h2>
+						<h2 class="fragment">Shaders, Shapes, Regions, HighlevelGraphicShit&#8482;</h2>
 						
 						<aside class="notes">
 							, my ass!  
@@ -135,9 +181,14 @@
 				
 				<section data-background="#A82B38">
 					<section>
-						<h1>But what should we do?</h1>
+						<h1>»Complaining is no answer!«</h1>
+						
+						<aside class="notes">
+							You're right, that is completely true. We all can do better!
+						</aside>
 					</section>
 					<section>
+						<h1>You know him?</h1>
 						<p><img src="http://25.media.tumblr.com/9f3c66ff979343ec23420bd062441822/tumblr_ms079btJ0c1rvsbh9o1_1280.jpg"></p>
 					</section>
 					<section>
@@ -145,10 +196,10 @@
 						<h2 class="fragment">Help to <a href="http://movethewebforward.org/">move the web forward</a></h2>
 						<h2 class="fragment">Write <em>Polyfills</em></a></h2>
 						<h2 class="fragment">Evolve Standards</a></h2>
-						<h2 class="fragment">Care about the basics.</a></h2>
+						<h2 class="fragment"><strong>Care about the basics.</strong></a></h2>
 					</section>
 					<section>
-						<h1>But wait, <small>we have our basics.</small></h1>
+						<h1>»But wait, <small>we have our basics.</small>«	</h1>
 						<h1 class="fragment">Gimme features!</h1>
 					</section>
 				</section>
@@ -219,24 +270,29 @@ img, video {
 							<li class="fragment">Microsoft wasn't pleased with TE</li>
 							<li class="fragment">MS + W3C develop Pointer Events</li>
 							<li class="fragment">MS and Firefox OS introcude PE to public</li>
-							<li class="fragment">WebKit and Blink going separate</li>
-							<li class="fragment">The mess had been created&hellip;</li>
+							<li class="fragment">WebKit and Blink went separate</li>
+							<li class="fragment">10/2013: Touch Events are now W3C Recommendation, while PE are still CR</li>
+							<li class="fragment">The mess was created&hellip;</li>
 						</ul>
 					</section>
 					<section>
 						<h2>Written a touch application recently?</h2>
-						<p>Boo, that isn't funny since both event types are used right now.</p>
+						<p>Boo, that isn't funny since both event types are used right now:</p>
+						<ul>
+							<li>Windows Phone 8, Firefox OS: Pointer Events</li>
+							<li>iOS, Android: Touch Events</li>
+						</ul>
 					</section>
 					<section>
 						<h2>Rescue to <a href="https://github.com/mozilla/pointer.js">pointer.js</a></h2>
 						<p class="fragment">Thank god someone has written an abstraction.</p>
-						<p class="fragment">But there is way to go for Blink &amp; WebKit. At least, implementation has been started recently.</p>
+						<p class="fragment">But there is way to go for Blink &amp; WebKit and Firefox. At least, implementation has been started recently.</p>
 						
 						<aside class="notes">
 							Luckily enough there weren't such when I wrote my first touch web-application.
 							Hours of horror. Honestly.
 							
-							 Blink will recently started work on pointer event implementation but this will take a long time and WebKit will follow after that at earliest.
+							Blink and Firefox recently started work on Pointer Events implementation but this will take a long time and WebKit will follow after that at earliest.
 						</aside>
 					</section>
 					<section>
@@ -267,8 +323,53 @@ img, video {
 						</code></pre>
 						<p>Supported in WebKit Nightly already; <br>Blink to follow soon.</p>
 					</section>
+					
 					<section>
-						<p>Still, <code>&lt;picture&gt;</code> needs to fight its way through implementors.</p>
+						<h1>Then, there's <code>&lt;picture&gt;</code></h1>
+					</section>
+					
+					<section>
+						<ul>
+							<li>Discovered as the best solution to cover all <a href="http://usecases.responsiveimages.org/" target="_blank">use-cases</a> over 1.5 years.</li>
+							<li>Bloat markup if used very extensively but yeah, you still can use srcset (even inside of it).</li>
+							<li>Easy and understandable for developers.</li>
+						</li>
+					</section>
+					
+					<section>
+						<h1>And now I proudly present:</h1>
+					</section>
+					
+					<section data-background="img/facepalm_cat.jpg">
+						<h1 style="font-size: 8em">The Fun Part</h1>
+						
+						<p class="photo-attrib"><a href="http://www.flickr.com/photos/gumayunov/5409679091/" target="_blank">Photo by Victor Gumayunov</a></p>
+					</section>
+					
+					<section>
+						<h1>August, 2011</h1>
+						<iframe src="http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2011-August/032977.html" width="900" height="600"></iframe>
+					</section>
+					
+					<section>
+						<h1>September, 2013</h1>
+						<iframe src="http://lists.w3.org/Archives/Public/public-respimg/2013Sep/0064.html" width="900" height="600"></iframe>
+					</section>
+					
+					<section>
+						<h1>It's outta control</h1>
+						<p>Even RICG is now partly on that train of <code>srcN</code>, but yet no browser vendor took any step into one direction.</p> 
+					</section>
+					
+					<section>
+						<h1>In 2035</h1>
+						<img src="img/facepalm_dev.jpg">
+						
+						<p class="photo-attrib"><a href="http://www.flickr.com/photos/darkismus/4179361946/" target="_blank">Photo by Tuomas Puikkonen</a></p>
+					</section>
+					
+					<section>
+						<p>How can we avoid?</p>
 						<h3 class="fragment">Help and participate:</h3>
 						<ul class="fragment">
 							<li><a href="http://responsiveimages.org/">responsiveimages.org</a></li>
@@ -278,30 +379,38 @@ img, video {
 					</section>
 				</section>
 
-				<section data-background="#515860">
-					<h2>Finished? Not at all!</h2>
-					<ul>
-						<li class="fragment">CSS Media Query variables</li>
-						<li class="fragment">"HTML Templating" aka <a href="http://www.w3.org/TR/2013/WD-components-intro-20130606/">Web Components</a></li>
-						<li class="fragment"><a href="https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/ResourcePriorities/Overview.html">Resource Priorities</a> (lazyload Attribute)</li>
-						<li class="fragment">&hellip;to be continued.</li>
-					</ul>
-				</section>
-
 				<section data-background="#A92A5C">
-					<h1>Resource Priorities</h1>
+					<section>
+						<h1>Resource Priorities</h1>
 					
-					<li class="fragment">The script loading behavior is <a href="http://www.html5rocks.com/en/tutorials/speed/script-loading/">messy</a>.</li>
-					<li class="fragment">We don't need at everything on pageload</li>
-					<li class="fragment"><code>defer</code> is not a solution</li>
-					<li class="fragment">We want to <code>lazyload</code>, <code>postpone</code> and do this in HTML and CSS!</li>
-					
-					<aside class="notes">
-						Hey, this is so cool! You know this, having a gallery on one page of your site and therefore you need jQuery and a modal plugin? Yeah, you know what I'm talking about here.
-						We don't even need that script on pageload, it can lazyload.
+						<li class="fragment">The script loading behavior is <a href="http://www.html5rocks.com/en/tutorials/speed/script-loading/">messy</a>.</li>
+						<li class="fragment">We don't need at everything on pageload</li>
+						<li class="fragment"><code>defer</code> is not a solution</li>
+						<li class="fragment">We want to <code>lazyload</code>, <code>postpone</code> and do this in HTML and CSS!</li>
 						
-						And what about all the images that are not yet seen by the user because he hasn't the elements in the viewport yet? Yes, load them with postpone so they will get loaded only when they're in viewport. 
-					</aside>
+						<aside class="notes">
+							Hey, this is so cool! You know this, having a gallery on one page of your site and therefore you need jQuery and a modal plugin? Yeah, you know what I'm talking about here.
+							We don't even need that script on pageload, it can lazyload.
+							
+							And what about all the images that are not yet seen by the user because he hasn't the elements in the viewport yet? Yes, load them with postpone so they will get loaded only when they're in viewport. 
+						</aside>
+					</section>
+					<section>
+						<h1>How awesome is that?</h1>
+						
+						<pre><code><link rel="stylesheet" type="text/css" src="Styles.css" />
+<link rel="stylesheet" type="text/css" src="Animations.css" lazyload />
+
+<img id="Logo" src=".../images/Logo.png"/>
+<img id="Header" src=".../images/Header.png"/>
+<img id="AdditionalImages1" src=".../images/AdditionalImages1.png" lazyload />
+<img id="AdditionalImages2" src=".../images/AdditionalImages2.png" lazyload />
+
+<video id="MainContent"><source src=".../videos/MainContent.mp4"></video>
+
+<script src="Visuals.js" ></script>
+<script src="Analytics.js" lazyload ></script></code></pre>
+					</section>	
 				</section>
 				
 				<section data-background="#A92A5C">
@@ -323,6 +432,20 @@ img, video {
     </div>
 </template></code></pre>
 					</section>
+				</section>
+				
+				<section>	
+					<section data-background="#515860">
+						<h2>Finished? Not at all!</h2>
+						<ul>
+							<li class="fragment">CSS Media Query variables</li>
+							<li class="fragment">Fixing <a href="http://vimeo.com/68680322" target="_blank">the multi-language hell</a>.</li>
+							<li class="fragment">A <a href="http://lists.w3.org/Archives/Public/www-style/2013Aug/0303.html"><code>font-size: line-fit;</code> property</a>.</li>
+							<li class="fragment"><a href="http://lists.w3.org/Archives/Public/www-style/2013Oct/0194.html">Complex footnotes</a></li>
+							<li class="fragment">&hellip;to be continued.</li>
+						</ul>
+					</section>
+
 					
 					<section>
 						<h2>Anselm, damn you!</h2>
@@ -350,7 +473,7 @@ img, video {
 				<section data-background="#019875">
 					<h1>Thanks! &hearts;</h1>
 					<h3>I am <a href="http://helloanselm.com/">Anselm Hannemann</a> and you can follow me on Twitter: <a href="http://twitter.com/helloanselm">@helloanselm</a></h3>
-					<h3>Slides at <a href="http://slidedeck.io/anselmh/">slidedeck.io</a>.</h3>
+					<h3>Slides at <a href="http://slidedeck.io/anselmh/">slidedeck.io/anselmh</a>.</h3>
 				</section>
 
 			</div>
@@ -369,6 +492,8 @@ img, video {
 				progress: true,
 				history: true,
 				center: true,
+				width: 1024,
+				height: 700,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
