@@ -21,6 +21,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'Medula One';
+  src: url(../../lib/font/MedulaOne-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'PT Mono';
   src: url("../../lib/font/PTM55FT.ttf") format("truetype");
   font-weight: bold;
@@ -52,7 +58,7 @@ body {
   background-color: #019875; }
 
 .reveal {
-  font-family: "PT Mono", "Courier", monospace;
+  font-family: "Nixie One", "PT Mono", "Courier", monospace;
   font-size: 32px;
   font-weight: 200;
   letter-spacing: -0.02em;
@@ -81,7 +87,7 @@ body {
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); }
 
 .reveal h1 {
-  font-family: "Sansita One", Impact, sans-serif;
+  font-family: "Medula One", Impact, sans-serif;
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
   font-weight: 200; }
 
@@ -193,3 +199,5 @@ body {
   position: absolute;
   bottom: -100px;
   left: 40%; }
+.reveal small {
+  vertical-align: bottom; }

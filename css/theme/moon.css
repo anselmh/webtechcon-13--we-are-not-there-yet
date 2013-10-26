@@ -28,7 +28,7 @@ body {
   background-color: #002b36; }
 
 .reveal {
-  font-family: "PT Mono", "Courier", monospace;
+  font-family: "Nixie One", "PT Mono", "Courier", monospace;
   font-size: 32px;
   font-weight: 200;
   letter-spacing: -0.02em;
@@ -51,13 +51,13 @@ body {
   margin: 0 0 40px 0;
   color: #eee8d5;
   font-family: "Nixie One", sans-serif;
-  line-height: 0.9em;
+  line-height: 1em;
   letter-spacing: 0.02em;
   text-transform: none;
   text-shadow: none; }
 
 .reveal h1 {
-  font-family: "Sansita One", Impact, sans-serif;
+  font-family: "Medula One", Impact, sans-serif;
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
   font-weight: 200; }
 

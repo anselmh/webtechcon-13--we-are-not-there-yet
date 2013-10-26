@@ -48,13 +48,13 @@ body {
   margin: 0 0 40px 0;
   color: #333333;
   font-family: "Quicksand", sans-serif;
-  line-height: 0.9em;
+  line-height: 1em;
   letter-spacing: -0.08em;
   text-transform: none;
   text-shadow: none; }
 
 .reveal h1 {
-  font-family: "Sansita One", Impact, sans-serif;
+  font-family: "Medula One", Impact, sans-serif;
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
   font-weight: 200; }
 
